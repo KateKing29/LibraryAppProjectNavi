@@ -14,7 +14,7 @@ public class UserStepDefs {
     @Given("Establish the database connection")
     public void establish_the_database_connection() {
         // Make a conn with library
-        // DB_Util.createConnection();
+         DB_Util.createConnection();
         System.out.println("--------------------------------------------------");
         System.out.println("--- CONNECTION WILL BE DONE WITH BEFORE HOOK -----");
         System.out.println("--------------------------------------------------");
@@ -43,5 +43,18 @@ public class UserStepDefs {
         System.out.println("--------------------------------------------------");
         System.out.println("--- CONNECTION WILL BE CLOSED WITH AFTER HOOK -----");
         System.out.println("--------------------------------------------------");
+    }
+
+    @When("I execute query to find most popular book genre")
+    public void iExecuteQueryToFindMostPopularBookGenre() {
+
+
+
+
+    }
+
+    @Then("verify {string} is the most popular book genre.")
+    public void verifyIsTheMostPopularBookGenre(String arg0) {
+
     }
 }
